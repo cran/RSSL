@@ -52,7 +52,7 @@ geom_linearclassifier <- function(...,show_guide=TRUE) {
 
 StatClassifier <- 
   ggproto("StatClassifier", Stat, 
-          required_aes = c("x","y","z"),
+          required_aes = c("x","y"),
           
           setup_params = function(data, params) {
             params

@@ -1,4 +1,4 @@
-d939dda71cd860860d57b1b5973c15e3 *DESCRIPTION
+6142c964b80a109a0c86025e5b932025 *DESCRIPTION
 4b5e6909de30fdbe7111a3b866960f0d *NAMESPACE
 f2fb5aa6a6f47f44a875edfa17eb31cb *R/Classifier.R
 5dfca161fc319cdb78fbfb85fddf6591 *R/CrossValidation.R
@@ -30,7 +30,7 @@ b81f615dcd705ce25a27a9a114403b62 *R/MCPLDA.R
 ba58d05ff8e087de498aed195d212848 *R/Measures.R
 d80ce2478fa0a27ec2a6304323244e2d *R/NearestMeanClassifier.R
 4acb4e91be9adc00680bb15e8130ce49 *R/NormalBasedClassifier.R
-4d73ba265f5afee12c7455fe93b9b62d *R/Plotting.R
+42701954cd8ea39e89c0703164e5c936 *R/Plotting.R
 76099d2dabba2e05454bad21b339614e *R/QuadraticDiscriminantClassifier.R
 f12312d07646d508ac6f183eadf57735 *R/RSSL.R
 4eb3720ab5747883a083db589bc0ea7d *R/RcppExports.R
@@ -202,7 +202,7 @@ fd5a7fd237a6c8fd956b3f3f58416426 *tests/testthat/test-MCNearestMeanClassifier.R
 727f2a1d78797ddf394d6110d1d5b2c0 *tests/testthat/test-NearestMeanClassifier.R
 e67e40ccc817608dc5ecedbb56ebfcdb *tests/testthat/test-QuadraticDiscriminantClassifier.R
 37bb765f631f9b721d65191e7aa6df9e *tests/testthat/test-S4VM.R
-f533e84499f1d9db5ba06dbb866bdea7 *tests/testthat/test-SVM.R
+b03145cb312370a5b7aaf8bc4d12b011 *tests/testthat/test-SVM.R
 42baabfc2e231bbb440f62d0ea4afe46 *tests/testthat/test-SelfLearning.R
 b9041890be5b3a0b6ba6e60231b1e703 *tests/testthat/test-TSVM.R
 c0dfa45063f7f706dda6ace2c417859e *tests/testthat/test-USMLeastSquaresClassifier.R
