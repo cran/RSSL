@@ -32,6 +32,7 @@ WellSVM(X, y, X_u, C1 = 1, C2 = 0.1, gamma = 1, x_center = TRUE,
 WellSVM is a minimax relaxation of the mixed integer programming problem of finding the optimal labels for the unlabeled data in the SVM objective function. This implementation is a translation of the Matlab implementation of Li (2013) into R.
 }
 \examples{
+library(RSSL)
 library(ggplot2)
 library(dplyr)
 
@@ -57,7 +58,8 @@ Y.-F. Li, I. W. Tsang, J. T. Kwok, and Z.-H. Zhou. Scalable and Convex Weakly La
 R.-E. Fan, P.-H. Chen, and C.-J. Lin. Working set selection using second order information for training SVM. Journal of Machine Learning Research 6, 1889-1918, 2005.
 }
 \seealso{
-Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
+Other RSSL classifiers: \code{\link{EMLeastSquaresClassifier}},
+  \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{GRFClassifier}},
   \code{\link{ICLeastSquaresClassifier}},
   \code{\link{ICLinearDiscriminantClassifier}},
@@ -80,4 +82,3 @@ Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{USMLeastSquaresClassifier}},
   \code{\link{svmlin}}
 }
-

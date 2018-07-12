@@ -38,6 +38,7 @@ LaplacianKernelLeastSquaresClassifier(X, y, X_u, lambda = 0, gamma = 0,
 Implements manifold regularization through the graph Laplacian as proposed by Belkin et al. 2006. As an adjacency matrix, we use the k nearest neighbour graph based on a chosen distance (default: euclidean).
 }
 \examples{
+library(RSSL)
 library(ggplot2)
 library(dplyr)
 
@@ -126,7 +127,8 @@ df \%>\%
 Belkin, M., Niyogi, P. & Sindhwani, V., 2006. Manifold regularization: A geometric framework for learning from labeled and unlabeled examples. Journal of Machine Learning Research, 7, pp.2399-2434.
 }
 \seealso{
-Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
+Other RSSL classifiers: \code{\link{EMLeastSquaresClassifier}},
+  \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{GRFClassifier}},
   \code{\link{ICLeastSquaresClassifier}},
   \code{\link{ICLinearDiscriminantClassifier}},
@@ -148,4 +150,3 @@ Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{USMLeastSquaresClassifier}},
   \code{\link{WellSVM}}, \code{\link{svmlin}}
 }
-

@@ -36,6 +36,7 @@ S4 object of class EntropyRegularizedLogisticRegression with the following slots
 R Implementation of entropy regularized logistic regression implementation as proposed by Grandvalet & Bengio (2005). An extra term is added to the objective function of logistic regression that penalizes the entropy of the posterior measured on the unlabeled examples.
 }
 \examples{
+library(RSSL)
 library(ggplot2)
 library(dplyr)
 
@@ -69,4 +70,3 @@ mean(predict(class_erlr,df_test)==df_test$Class)
 \references{
 Grandvalet, Y. & Bengio, Y., 2005. Semi-supervised learning by entropy minimization. In L. K. Saul, Y. Weiss, & L. Bottou, eds. Advances in Neural Information Processing Systems 17. Cambridge, MA: MIT Press, pp. 529-536.
 }
-

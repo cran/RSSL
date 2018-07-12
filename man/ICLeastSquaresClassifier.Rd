@@ -82,7 +82,8 @@ Krijthe, J.H. & Loog, M., 2015. Implicitly Constrained Semi-Supervised Least Squ
 Krijthe, J.H. & Loog, M., 2016. Projected Estimators for Robust Semi-supervised Classification. arXiv preprint arXiv:1602.07865.
 }
 \seealso{
-Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
+Other RSSL classifiers: \code{\link{EMLeastSquaresClassifier}},
+  \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{GRFClassifier}},
   \code{\link{ICLinearDiscriminantClassifier}},
   \code{\link{KernelLeastSquaresClassifier}},
@@ -104,4 +105,3 @@ Other RSSL classifiers: \code{\link{EMLinearDiscriminantClassifier}},
   \code{\link{USMLeastSquaresClassifier}},
   \code{\link{WellSVM}}, \code{\link{svmlin}}
 }
-

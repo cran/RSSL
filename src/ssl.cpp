@@ -107,10 +107,10 @@ int CGLS(const struct data *Data,
   double *r = new double[n];
   for(int i = n ; i-- ;)
     r[i] = 0.0;
-  for(register int j=0; j < active; j++)
+  for(int j=0; j < active; j++)
     {
       ii=J[j];
-      for(register int i=row[ii]; i < row[ii+1]; i++)
+      for(int i=row[ii]; i < row[ii+1]; i++)
 	r[col[i]]+=val[i]*z[j];
     }
   double *p = new double[n];
@@ -136,7 +136,7 @@ int CGLS(const struct data *Data,
       cgiter++;
       omega_q=0.0;
       double t=0.0;
-      register int i,j;
+      int i,j;
       // #pragma omp parallel for private(i,j)
       for(i=0; i < active; i++)
 	{
@@ -162,11 +162,11 @@ int CGLS(const struct data *Data,
 	  z[i] -= gamma*C[ii]*q[i];
 	  omega_z+=z[i]*z[i];
 	}
-      for(register int j=0; j < active; j++)
+      for(int j=0; j < active; j++)
 	{
 	  ii=J[j];
 	  t=z[j];
-	  for(register int i=row[ii]; i < row[ii+1]; i++)
+	  for(int i=row[ii]; i < row[ii+1]; i++)
 	    r[col[i]]+=val[i]*t;
 	}
       omega1 = 0.0;
@@ -277,11 +277,11 @@ int L2_SVM_MFN(const struct data *Data,
 	o_bar[i]=o[i];
 
       opt=CGLS(Data,Options,ActiveSubset,Weights_bar,Outputs_bar);
-      for(register int i=active; i < m; i++)
+      for(int i=active; i < m; i++)
 	{
 	  ii=ActiveSubset->vec[i];
 	  t=0.0;
-	  for(register int j=row[ii]; j < row[ii+1]; j++)
+	  for(int j=row[ii]; j < row[ii+1]; j++)
 	    t+=val[j]*w_bar[col[j]];
 	  o_bar[ii]=t;
 	}
@@ -802,11 +802,11 @@ int optimize_w(const struct data *Data,
 	o_bar[i]=o[i];
       if (Options->verbose) { Rcpp::Rcout << "_" ; }
       opt=CGLS(Data,Options,ActiveSubset,Weights_bar,Outputs_bar);
-      for(register int i=active; i < m; i++)
+      for(int i=active; i < m; i++)
 	{
 	  ii=ActiveSubset->vec[i];
 	  t=0.0;
-	  for(register int j=row[ii]; j < row[ii+1]; j++)
+	  for(int j=row[ii]; j < row[ii+1]; j++)
 	    t+=val[j]*w_bar[col[j]];
 	  o_bar[ii]=t;
 	}
@@ -982,7 +982,7 @@ void optimize_p(const double* g, int u, double T, double r, double* p)
   for(int i=0;i<u;i++)
     {
       s=exp((g[i]-nu)/T);
-      if(!(isinf(s)))
+      if(!(std::isinf(s)))
 	{
 	  tmp=1.0/(1.0+s);
 	  Bnu+=tmp;
@@ -1007,7 +1007,7 @@ void optimize_p(const double* g, int u, double T, double r, double* p)
       for(int i=0;i<u;i++)
 	{
 	  s=exp((g[i]-nu)/T);
-	  if(!(isinf(s)))
+	  if(!(std::isinf(s)))
 	    {
 	      tmp=1.0/(1.0+s);
 	      Bnu+=tmp;
@@ -1030,7 +1030,7 @@ void optimize_p(const double* g, int u, double T, double r, double* p)
   for(int i=0;i<u;i++)
     {
       s=exp((g[i]-nu)/T);
-      if(isinf(s)) p[i]=0.0;
+      if(std::isinf(s)) p[i]=0.0;
       else p[i]=1.0/(1.0+s);
     }
   //Rcpp::Rcout << " root (nu) = " << nu << " B(nu) = " << Bnu << endl;
@@ -1080,7 +1080,7 @@ double KL(const double *p, const double *q, int u)
       if(q1>1-1e-8) q1-=1e-8;
       if(q1<1-1e-8) q1+=1e-8;
       g= (p1*LOG2(p1/q1) + (1-p1)*LOG2((1-p1)/(1-q1)));
-      if(fabs(g)<1e-12 || isnan(g)) g=0.0;
+      if(fabs(g)<1e-12 || std::isnan(g)) g=0.0;
       h+=g;
     }
     return h/u;
