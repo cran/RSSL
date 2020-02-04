@@ -22,7 +22,7 @@ setClass("KernelLeastSquaresClassifier",
 #' \item{theta}{weight vector}
 #' \item{classnames}{the names of the classes}
 #' \item{modelform}{formula object of the model used in regression}
-#' \item{scaling}{a scaling object containing the paramters of the z-transforms applied to the data}
+#' \item{scaling}{a scaling object containing the parameters of the z-transforms applied to the data}
 #' 
 #' @example inst/examples/example-KernelLeastSquaresClassifier.R
 #' @export
@@ -96,7 +96,7 @@ setMethod("loss", signature(object="KernelLeastSquaresClassifier"), function(obj
 
 #' @rdname rssl-predict
 #' @aliases predict,LeastSquaresClassifier-method
-setMethod("predict", signature(object="KernelLeastSquaresClassifier"), function(object, newdata, probs=FALSE,...) {
+setMethod("predict", signature(object="KernelLeastSquaresClassifier"), function(object, newdata,...) {
   ModelVariables<-PreProcessingPredict(object@modelform,newdata,scaling=object@scaling,intercept=FALSE)
   
   X<-ModelVariables$X

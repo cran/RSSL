@@ -8,20 +8,20 @@
 summary.CrossValidation <- function(object, measure=NULL,...) {
   results <- object$results
   if (!is.null(measure)) {
-    results <- results %>% filter_(quote(Measure) %in% measure) 
+    results <- results %>% dplyr::filter(.data$Measure %in% measure) 
   }
   if ("Dataset" %in% names(object$results)) {
     results %>% 
-      group_by_("Measure","Classifier","Dataset") %>% 
-      summarize(Value=quote(mean(value))) %>% 
-      ungroup %>%
-      group_by_("Measure")
+      dplyr::group_by(.data$Measure,.data$Classifier,.data$Dataset) %>% 
+      dplyr::summarize(Value=mean(.data$value)) %>% 
+      dplyr::ungroup() %>%
+      group_by(.data$Measure)
   } else {
     results %>% 
-      group_by_("Measure","Classifier") %>% 
-      summarize(Value=quote(mean(value))) %>% 
-      ungroup %>% 
-      tidyr::spread_("Measure","Value")
+      dplyr::group_by(.data$Measure,.data$Classifier) %>% 
+      dplyr::summarize(Value=mean(.data$value)) %>% 
+      dplyr::ungroup() %>% 
+      tidyr::spread(.data$Measure,.data$Value)
   }
 }
 
@@ -149,7 +149,7 @@ CrossValidationSSL.list <- function(X,y, ...,verbose=FALSE, mc.cores=1) {
 #' @param repeats integer; Number of repeated assignments to folds
 #' @param verbose logical; Controls the verbosity of the output
 #' @param leaveout either "labeled" or "test", see details
-#' @param n_labeled Number of labeled examples, used in both leavout modes
+#' @param n_labeled Number of labeled examples, used in both leaveout modes
 #' @param pre_scale logical; Whether the features should be scaled before the dataset is used
 #' @param pre_pca logical; Whether the features should be preprocessed using a PCA step
 #' @param n_min integer; Minimum number of labeled objects per class

@@ -1,5 +1,5 @@
 Package: RSSL
-Version: 0.8
+Version: 0.9.1
 Title: Implementations of Semi-Supervised Learning Approaches for
         Classification
 Authors@R: c(person("Jesse", "Krijthe", role = c("aut", "cre"),
@@ -35,10 +35,10 @@ Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
         'RcppExports.R' 'S4VM.R' 'SVM.R' 'SelfLearning.R' 'TSVM.R'
         'USMLeastSquaresClassifier.R' 'WellSVM.R' 'scaleMatrix.R'
         'svmd.R' 'svmlin.R' 'testdata-data.R'
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 NeedsCompilation: yes
-Packaged: 2019-03-08 11:14:24 UTC; jkrijthe
+Packaged: 2020-02-03 17:03:20 UTC; jkrijthe
 Author: Jesse Krijthe [aut, cre]
 Maintainer: Jesse Krijthe <jkrijthe@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-03-08 18:42:41 UTC
+Date/Publication: 2020-02-04 10:20:07 UTC

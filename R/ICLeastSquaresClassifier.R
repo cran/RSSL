@@ -30,14 +30,13 @@ setClass("ICLeastSquaresClassifier",
 #' @param projection One of "supervised", "semisupervised" or "euclidean"
 #' @param lambda_prior numeric; prior on the deviation from the supervised mean y
 #' @param trueprob numeric; true mean y for all data
-#' @param ... additional arguments
 #' @inheritParams BaseClassifier
 #' 
 #' @return S4 object of class ICLeastSquaresClassifier with the following slots:
 #' \item{theta}{weight vector}
 #' \item{classnames}{the names of the classes}
 #' \item{modelform}{formula object of the model used in regression}
-#' \item{scaling}{a scaling object containing the paramters of the z-transforms applied to the data}
+#' \item{scaling}{a scaling object containing the parameters of the z-transforms applied to the data}
 #' \item{optimization}{the object returned by the optim function}
 #' \item{unlabels}{the labels assigned to the unlabeled objects}
 #' 

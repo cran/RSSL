@@ -40,15 +40,13 @@ ICLeastSquaresClassifier(X, y, X_u = NULL, lambda1 = 0, lambda2 = 0,
 \item{y_scale}{logical; whether the target vector should be centered}
 
 \item{use_Xu_for_scaling}{logical; whether the unlabeled objects should be used to determine the mean and scaling for the normalization}
-
-\item{...}{additional arguments}
 }
 \value{
 S4 object of class ICLeastSquaresClassifier with the following slots:
 \item{theta}{weight vector}
 \item{classnames}{the names of the classes}
 \item{modelform}{formula object of the model used in regression}
-\item{scaling}{a scaling object containing the paramters of the z-transforms applied to the data}
+\item{scaling}{a scaling object containing the parameters of the z-transforms applied to the data}
 \item{optimization}{the object returned by the optim function}
 \item{unlabels}{the labels assigned to the unlabeled objects}
 }

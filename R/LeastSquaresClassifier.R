@@ -21,7 +21,7 @@ setClass("LeastSquaresClassifier",
 #' \item{theta}{weight vector}
 #' \item{classnames}{the names of the classes}
 #' \item{modelform}{formula object of the model used in regression}
-#' \item{scaling}{a scaling object containing the paramters of the z-transforms applied to the data}
+#' \item{scaling}{a scaling object containing the parameters of the z-transforms applied to the data}
 #' @export
 LeastSquaresClassifier <- function(X, y, lambda=0, intercept=TRUE, x_center=FALSE, scale=FALSE, method="inverse", y_scale=FALSE) {
   
@@ -128,7 +128,7 @@ setMethod("loss", signature(object="LeastSquaresClassifier"), function(object, n
 
 #' @rdname rssl-predict
 #' @aliases predict,LeastSquaresClassifier-method
-setMethod("predict", signature(object="LeastSquaresClassifier"), function(object, newdata, probs=FALSE,...) {
+setMethod("predict", signature(object="LeastSquaresClassifier"), function(object, newdata, ...) {
   ModelVariables <- PreProcessingPredict(object@modelform,newdata,scaling=object@scaling,intercept=object@intercept,classnames=object@classnames)
   X <- ModelVariables$X
   
@@ -142,11 +142,7 @@ setMethod("predict", signature(object="LeastSquaresClassifier"), function(object
     classes <- factor(as.integer(expscore[,1]<0.5)+1,levels=1:length(object@classnames), labels=object@classnames)
   }
   
-  if (probs){
-    return(expscore)
-  } else {
-    return(classes)
-  }
+  return(classes)
 })
 
 #' @rdname decisionvalues-methods

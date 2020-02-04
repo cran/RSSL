@@ -162,7 +162,7 @@ WellSVM <- function(X,y,X_u,C1=1,C2=0.1,gamma=1,x_center=TRUE,scale=FALSE,use_Xu
 
 #' @rdname rssl-predict
 #' @aliases predict,WellSVM-method
-setMethod("predict", signature(object="WellSVM"), function(object, newdata, probs=FALSE,...) {
+setMethod("predict", signature(object="WellSVM"), function(object, newdata,...) {
   ModelVariables <- PreProcessingPredict(object@modelform,newdata,scaling=object@scaling,intercept=FALSE,classnames=object@classnames)
   X <- ModelVariables$X
   
@@ -370,9 +370,9 @@ threshold <- function(y1,options) {
   return(y2)
 }
 
-#' calculated the guassian kernel matrix
+#' calculated the gaussian kernel matrix
 #' @param x  A d x n training data matrix
-#' @param gamma  kernel paramater
+#' @param gamma  kernel parameter
 #' @param x_test A d x m testing data matrix
 #' @return k - A n x m kernel matrix and dis_mat - A n x m distance matrix
 gaussian_kernel <- function(x,gamma,x_test=NULL) {
@@ -616,7 +616,7 @@ prediction_func <- function(alpha,y_set,beta,trainx,testx,options) {
 #' @param y label vector
 #' @param ind_y Labeled/Unlabeled indicator
 #' @param lr positive ratio
-#' @param y_init label intitialization     
+#' @param y_init label initialization     
 find_a_violated_label <-  function(alpha,K,y,ind_y,lr,y_init) {
 
   
