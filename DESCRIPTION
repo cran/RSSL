@@ -1,5 +1,5 @@
 Package: RSSL
-Version: 0.9.1
+Version: 0.9.2
 Title: Implementations of Semi-Supervised Learning Approaches for
         Classification
 Authors@R: c(person("Jesse", "Krijthe", role = c("aut", "cre"),
@@ -15,8 +15,8 @@ Description: A collection of implementations of semi-supervised classifiers
     the Transductive SVM, Manifold regularization, Maximum Contrastive Pessimistic
     Likelihood estimation, S4VM and WellSVM.
 License: GPL (>= 2)
-URL: http://www.github.com/jkrijthe/RSSL
-BugReports: http://www.github.com/jkrijthe/RSSL
+URL: https://github.com/jkrijthe/RSSL
+BugReports: https://github.com/jkrijthe/RSSL
 Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
         'LeastSquaresClassifier.R' 'EMLeastSquaresClassifier.R'
         'NormalBasedClassifier.R' 'LinearDiscriminantClassifier.R'
@@ -35,10 +35,11 @@ Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
         'RcppExports.R' 'S4VM.R' 'SVM.R' 'SelfLearning.R' 'TSVM.R'
         'USMLeastSquaresClassifier.R' 'WellSVM.R' 'scaleMatrix.R'
         'svmd.R' 'svmlin.R' 'testdata-data.R'
-RoxygenNote: 6.1.1
+Encoding: UTF-8
+RoxygenNote: 7.1.0
 NeedsCompilation: yes
-Packaged: 2020-02-03 17:03:20 UTC; jkrijthe
+Packaged: 2020-09-10 11:55:48 UTC; jkrijthe
 Author: Jesse Krijthe [aut, cre]
 Maintainer: Jesse Krijthe <jkrijthe@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-02-04 10:20:07 UTC
+Date/Publication: 2020-09-12 05:50:53 UTC

@@ -5,10 +5,12 @@ Status](https://travis-ci.org/jkrijthe/RSSL.png?branch=master)](https://travis-c
 [![CRAN mirror
 downloads](http://cranlogs.r-pkg.org/badges/RSSL)](https://cran.r-project.org/package=RSSL)
 
-\#R Semi-Supervised Learning package This R package provides
-implementations of several semi-supervised learning methods, in
-particular, our own work involving constraint based semi-supervised
-learning.
+R Semi-Supervised Learning package
+==================================
+
+This R package provides implementations of several semi-supervised
+learning methods, in particular, our own work involving constraint based
+semi-supervised learning.
 
 To cite the package, use either of these two references:
 
@@ -19,15 +21,18 @@ To cite the package, use either of these two references:
     Publishing.
     <a href="https://doi.org/10.1007/978-3-319-56414-2_8" class="uri">https://doi.org/10.1007/978-3-319-56414-2_8</a>.
     arxiv:
-    <a href="http://arxiv.org/abs/1612.07993" class="uri">http://arxiv.org/abs/1612.07993</a>
+    <a href="https://arxiv.org/abs/1612.07993" class="uri">https://arxiv.org/abs/1612.07993</a>
 -   Krijthe, J.H. & Loog, M. (2015). Implicitly Constrained
     Semi-Supervised Least Squares Classification. In E. Fromont, T. de
     Bie, & M. van Leeuwen, eds. 14th International Symposium on Advances
     in Intelligent Data Analysis XIV (Lecture Notes in Computer Science
     Volume 9385). Saint Etienne. France, pp. 158-169.
 
-\#Installation Instructions This package available on CRAN. The easiest
-way to install the package is to use:
+Installation Instructions
+=========================
+
+This package available on CRAN. The easiest way to install the package
+is to use:
 
 ``` r
 install.packages("RSSL")
@@ -40,7 +45,10 @@ library(devtools)
 install_github("jkrijthe/RSSL")
 ```
 
-\#Usage After installation, load the package as usual:
+Usage
+=====
+
+After installation, load the package as usual:
 
 ``` r
 library(RSSL)
@@ -88,5 +96,8 @@ mean(predict(g_nm,df)!=df$Class)
 mean(predict(g_self,df)!=df$Class)
 ```
 
-\#Acknowledgement Work on this package was supported by Project 23 of
-the Dutch national program COMMIT.
+Acknowledgement
+===============
+
+Work on this package was supported by Project 23 of the Dutch national
+program COMMIT.
