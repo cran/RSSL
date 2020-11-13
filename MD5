@@ -1,4 +1,4 @@
-f6c13ac65b5e790b47296923328f5f22 *DESCRIPTION
+8d27ae62a213a7322cb2f97734d7c08c *DESCRIPTION
 db7630c6c414c6a38b0158a9c86a176e *NAMESPACE
 f2fb5aa6a6f47f44a875edfa17eb31cb *R/Classifier.R
 9ee2afc549db70fbbaa733e211ebe277 *R/CrossValidation.R
@@ -22,7 +22,7 @@ b1e7d53148a29e7699933b006d2f2684 *R/LeastSquaresClassifier.R
 a92572ef49bdde89488c9e8ec555b249 *R/LinearDiscriminantClassifier.R
 128f7ca4e28d25576c93436ff9186462 *R/LinearSVM.R
 4ddb16e29aa34b3f48d3b8cc43e3170f *R/LogisticLossClassifier.R
-69cc199bff14a99ef5fe10c9d9880b53 *R/LogisticRegression.R
+1b9004c5f68268704ebd6456989079f0 *R/LogisticRegression.R
 ae15afbbd80681abcf65c74fef5b294d *R/MCLinearDiscriminantClassifier.R
 d62bd933062902c4fa253eaac74017e2 *R/MCNearestMeanClassifier.R
 85a02e2740a8b3707754718820fdf349 *R/MCPLDA.R

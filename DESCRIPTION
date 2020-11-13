@@ -1,5 +1,5 @@
 Package: RSSL
-Version: 0.9.2
+Version: 0.9.3
 Title: Implementations of Semi-Supervised Learning Approaches for
         Classification
 Authors@R: c(person("Jesse", "Krijthe", role = c("aut", "cre"),
@@ -38,8 +38,8 @@ Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
 Encoding: UTF-8
 RoxygenNote: 7.1.0
 NeedsCompilation: yes
-Packaged: 2020-09-10 11:55:48 UTC; jkrijthe
+Packaged: 2020-11-13 17:24:31 UTC; jkrijthe
 Author: Jesse Krijthe [aut, cre]
 Maintainer: Jesse Krijthe <jkrijthe@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-09-12 05:50:53 UTC
+Date/Publication: 2020-11-13 18:00:10 UTC
