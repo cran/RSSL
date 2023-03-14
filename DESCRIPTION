@@ -1,5 +1,5 @@
 Package: RSSL
-Version: 0.9.5
+Version: 0.9.6
 Title: Implementations of Semi-Supervised Learning Approaches for
         Classification
 Authors@R: c(person("Jesse", "Krijthe", role = c("aut", "cre"),
@@ -8,7 +8,7 @@ Depends: R(>= 2.10.0)
 Imports: methods, Rcpp, MASS, kernlab, quadprog, Matrix, dplyr, tidyr,
         ggplot2, reshape2, scales, cluster
 LinkingTo: Rcpp, RcppArmadillo
-Suggests: testthat, rmarkdown, SparseM, numDeriv, LiblineaR
+Suggests: testthat, rmarkdown, SparseM, numDeriv, LiblineaR, covr
 Description: A collection of implementations of semi-supervised classifiers
     and methods to evaluate their performance. The package includes implementations
     of, among others, Implicitly Constrained Learning, Moment Constrained Learning,
@@ -36,10 +36,10 @@ Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
         'USMLeastSquaresClassifier.R' 'WellSVM.R' 'scaleMatrix.R'
         'svmd.R' 'svmlin.R' 'testdata-data.R'
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2022-01-17 14:41:20 UTC; jkrijthe
+Packaged: 2023-03-13 19:47:37 UTC; jkrijthe
 Author: Jesse Krijthe [aut, cre]
 Maintainer: Jesse Krijthe <jkrijthe@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-01-17 15:12:42 UTC
+Date/Publication: 2023-03-14 08:40:02 UTC
