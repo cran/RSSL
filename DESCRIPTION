@@ -1,5 +1,5 @@
 Package: RSSL
-Version: 0.9.6
+Version: 0.9.7
 Title: Implementations of Semi-Supervised Learning Approaches for
         Classification
 Authors@R: c(person("Jesse", "Krijthe", role = c("aut", "cre"),
@@ -31,15 +31,16 @@ Collate: 'Generics.R' 'Classifier.R' 'CrossValidation.R'
         'LearningCurve.R' 'LinearSVM.R' 'LogisticLossClassifier.R'
         'MCLinearDiscriminantClassifier.R' 'MCNearestMeanClassifier.R'
         'MCPLDA.R' 'MajorityClassClassifier.R' 'Measures.R'
-        'Plotting.R' 'QuadraticDiscriminantClassifier.R' 'RSSL.R'
-        'RcppExports.R' 'S4VM.R' 'SVM.R' 'SelfLearning.R' 'TSVM.R'
-        'USMLeastSquaresClassifier.R' 'WellSVM.R' 'scaleMatrix.R'
-        'svmd.R' 'svmlin.R' 'testdata-data.R'
+        'Plotting.R' 'QuadraticDiscriminantClassifier.R'
+        'RSSL-package.R' 'RcppExports.R' 'S4VM.R' 'SVM.R'
+        'SelfLearning.R' 'TSVM.R' 'USMLeastSquaresClassifier.R'
+        'WellSVM.R' 'scaleMatrix.R' 'svmd.R' 'svmlin.R'
+        'testdata-data.R'
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2023-03-13 19:47:37 UTC; jkrijthe
+Packaged: 2023-12-07 04:22:03 UTC; jkrijthe
 Author: Jesse Krijthe [aut, cre]
 Maintainer: Jesse Krijthe <jkrijthe@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-03-14 08:40:02 UTC
+Date/Publication: 2023-12-07 06:20:03 UTC

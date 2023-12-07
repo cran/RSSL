@@ -1,4 +1,4 @@
-c3c52b9b5fc95815edc0677ec07fc69a *DESCRIPTION
+4602c0e86701980afc7655707932f1b5 *DESCRIPTION
 db7630c6c414c6a38b0158a9c86a176e *NAMESPACE
 f2fb5aa6a6f47f44a875edfa17eb31cb *R/Classifier.R
 e5ba4055eceba6c1e4d8fa5fce2e2951 *R/CrossValidation.R
@@ -25,14 +25,14 @@ a92572ef49bdde89488c9e8ec555b249 *R/LinearDiscriminantClassifier.R
 1b9004c5f68268704ebd6456989079f0 *R/LogisticRegression.R
 ae15afbbd80681abcf65c74fef5b294d *R/MCLinearDiscriminantClassifier.R
 d62bd933062902c4fa253eaac74017e2 *R/MCNearestMeanClassifier.R
-85a02e2740a8b3707754718820fdf349 *R/MCPLDA.R
+21f3d57e17f04e25b9bf4c2947550f08 *R/MCPLDA.R
 8bfe0fbb5cb8119bc54f0af9d282c19c *R/MajorityClassClassifier.R
 0295ca0307d39b92b645bb51b68068dd *R/Measures.R
 ad98fb71f8a9a6ccb12ee91f038e6a14 *R/NearestMeanClassifier.R
 e9bd2fe1dc69649a7e57b5fe4f9cd604 *R/NormalBasedClassifier.R
 3ed9e6a225b9ff44cd2949878f6cea83 *R/Plotting.R
 286df9c89d67e6e73b8f27918fc986d6 *R/QuadraticDiscriminantClassifier.R
-73a80272adca9780f43ce604884f708a *R/RSSL.R
+10761f7123a30f2189028e3201edebd6 *R/RSSL-package.R
 7a95407f55d7db3f393f5c87043abe85 *R/RcppExports.R
 edba76c8937d0395b41389d8de548c52 *R/S4VM.R
 aceb5417f134bbdf318e7faddd8417b8 *R/SVM.R
@@ -44,7 +44,7 @@ cd1ec97cce233a7d770596d59eeca995 *R/SelfLearning.R
 f80a45120de6730045106fe9f967d61c *R/svmd.R
 f8dfd3c72102141f8df69c4fed569857 *R/svmlin.R
 bc76365230585f0f9d82f11149167c82 *R/testdata-data.R
-6b72a723eee97637c2534fb7f68ec627 *README.md
+6da18ecf3db3e92f348ffa5c009b8eb0 *README.md
 b1ece3f4f2a209cc9abd7d777546cb5c *data/diabetes.RData
 f92834ccc77fe2aab5ab0b65a292329a *data/svmlin_example.RData
 89e9e3f8d5b9b1ff83c6e3cd67383228 *data/testdata.RData
@@ -89,7 +89,7 @@ f78216ac18236a82782b89e9633084db *man/MajorityClassClassifier.Rd
 1391a798197f08cce21c4bb7d670fed3 *man/PreProcessing.Rd
 37f4210942f9041fd640816d8d97ea29 *man/PreProcessingPredict.Rd
 42d9c3d1b8f12d0730fa7b8283adf606 *man/QuadraticDiscriminantClassifier.Rd
-90b82677fee2c94220b3a2f81ab5172a *man/RSSL.Rd
+9e27091dff9887e77905323f9c951483 *man/RSSL-package.Rd
 d8cd40dbd5262ae9e03fc77f888cb6c2 *man/S4VM-class.Rd
 91c89356bb3d5b711e0c8abdca540f95 *man/S4VM.Rd
 877facaf5bc4771d1d5211f9772601bf *man/SSLDataFrameToMatrices.Rd
@@ -137,7 +137,7 @@ e5e6ee768a7b168a14b2fef4e284daa1 *man/plot.LearningCurve.Rd
 8addd03a5a5a4f8062fef05d37fbba2e *man/predict-scaleMatrix-method.Rd
 f934bc4ca32e2934999a0a4d2070ff4d *man/print.CrossValidation.Rd
 11ebc5e2742fbca604bd0a519ec043c7 *man/print.LearningCurve.Rd
-2d0d73ab482b796f4a14ff6edf8764fa *man/projection_simplex.Rd
+6e7b3acd502d364d4c8a089492d591e2 *man/projection_simplex.Rd
 88122b2ae635c37cc7f6a21a764e4bb6 *man/responsibilities-methods.Rd
 9160e8b1d735e8c3fe25d42d1164366b *man/rssl-formatting.Rd
 f7963f92aadbc33e9d4eee847c2bf88d *man/rssl-predict.Rd
@@ -171,7 +171,7 @@ d72d1a1322751cdf70da1f7248681fed *src/Rsvm.c
 00f0330029fe43345eca26a13d139d17 *src/init.c
 3951e9c190508ef9940ff1c2022409a4 *src/ssl.cpp
 aecf58ef9725c6674411825fa7c482e0 *src/ssl.h
-43654d4630454e77d96e2000cbd52b01 *src/svm.cpp
+9bf6586e078bf8912739b1e8643bb1a7 *src/svm.cpp
 97b3c4c8c316feb4da2ca3b2248f60f7 *src/svm.h
 393075bcd9baee4f7a3082b3c0d78d9a *src/svmlin_rcpp.cpp
 73b0540c738553a570324ddd4fa881fa *src/utils.cpp
