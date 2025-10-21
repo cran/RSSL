@@ -1,5 +1,5 @@
-4602c0e86701980afc7655707932f1b5 *DESCRIPTION
-db7630c6c414c6a38b0158a9c86a176e *NAMESPACE
+53ac2fb9c0ae8cf6e5fd92482217d1e3 *DESCRIPTION
+674d4f9db1533ff7f690e98c7cb09657 *NAMESPACE
 f2fb5aa6a6f47f44a875edfa17eb31cb *R/Classifier.R
 e5ba4055eceba6c1e4d8fa5fce2e2951 *R/CrossValidation.R
 40cdb717b91bb4481aa8adbc8c55fe7f *R/EMLeastSquaresClassifier.R
@@ -41,7 +41,7 @@ cd1ec97cce233a7d770596d59eeca995 *R/SelfLearning.R
 45b9591aa21da92f018af4c456a8855e *R/USMLeastSquaresClassifier.R
 993ef6484f8a5f34c3ac8340bea31ad7 *R/WellSVM.R
 156189b9989f0d30e9a2d8e0b9a4f0f4 *R/scaleMatrix.R
-f80a45120de6730045106fe9f967d61c *R/svmd.R
+340b6d72730e297c37cebddc75798a7f *R/svmd.R
 f8dfd3c72102141f8df69c4fed569857 *R/svmlin.R
 bc76365230585f0f9d82f11149167c82 *R/testdata-data.R
 6da18ecf3db3e92f348ffa5c009b8eb0 *README.md
@@ -89,7 +89,7 @@ f78216ac18236a82782b89e9633084db *man/MajorityClassClassifier.Rd
 1391a798197f08cce21c4bb7d670fed3 *man/PreProcessing.Rd
 37f4210942f9041fd640816d8d97ea29 *man/PreProcessingPredict.Rd
 42d9c3d1b8f12d0730fa7b8283adf606 *man/QuadraticDiscriminantClassifier.Rd
-9e27091dff9887e77905323f9c951483 *man/RSSL-package.Rd
+4ef8e11dfa85b87b23dcf0609f789ad7 *man/RSSL-package.Rd
 d8cd40dbd5262ae9e03fc77f888cb6c2 *man/S4VM-class.Rd
 91c89356bb3d5b711e0c8abdca540f95 *man/S4VM.Rd
 877facaf5bc4771d1d5211f9772601bf *man/SSLDataFrameToMatrices.Rd
@@ -174,7 +174,7 @@ aecf58ef9725c6674411825fa7c482e0 *src/ssl.h
 9bf6586e078bf8912739b1e8643bb1a7 *src/svm.cpp
 97b3c4c8c316feb4da2ca3b2248f60f7 *src/svm.h
 393075bcd9baee4f7a3082b3c0d78d9a *src/svmlin_rcpp.cpp
-73b0540c738553a570324ddd4fa881fa *src/utils.cpp
+70e9925837f45cccd68dac9eb01017a1 *src/utils.cpp
 8d94d29d96dca571ecbeade82465eec5 *tests/testthat.R
 28e63bf39a6c6af2906d20884f5e577f *tests/testthat/test-CrossValidation.R
 2f153038f20eec21de2cbaaa822ac86b *tests/testthat/test-EMLeastSquaresClassifier.R
